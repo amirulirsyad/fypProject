@@ -1,0 +1,56 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indoor Navigation System"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to Wi-Fi"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginBottom="16dp"
+        android:onClick="connectToWifi" />
+
+    <Button
+        android:id="@+id/calibrateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calibrate Location"
+        android:layout_below="@id/connectButton"
+        android:layout_marginBottom="16dp"
+        android:onClick="calibrateLocation" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Location"
+        android:layout_below="@id/calibrateButton"
+        android:layout_marginBottom="16dp"
+        android:onClick="saveLocation" />
+
+    <Button
+        android:id="@+id/navigateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigate"
+        android:layout_below="@id/saveButton"
+        android:onClick="navigateToDestination" />
+
+</RelativeLayout>
